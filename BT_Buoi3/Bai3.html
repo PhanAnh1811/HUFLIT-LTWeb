@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3</title>
+    <style>
+        label{
+            display: block;
+        }
+
+        body{
+            width: 600px;
+            margin: auto;
+        }
+
+        form{
+            width: 736px;
+            height: 600px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        
+        .form-group{
+            background-color: yellow;
+            padding-top: 1rem;
+            padding-bottom: .6rem;
+            padding: 1rem 1rem;
+            margin: 1rem 1rem;
+            border: 1px solid black;
+        }
+
+        .groupCount{
+            text-align: center;
+            border: 1px solid black;
+            width: 400px;
+            padding: 1rem 1rem;
+            margin-left: 10rem;
+            position: relative;
+        }
+
+        .txtCount{
+            position: absolute;
+            top: -1.6rem;
+            left: 1rem;
+            background-color: rgb(246, 246, 156);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 style="text-align: center; color: red;">Đăng Ký Du Lịch</h1>
+        <div class="form-group">
+            <label>
+                <p>Họ Tên
+                <input id="hoten" name="userName" type="text" placeholder="Nhập Tên Người Dùng">
+            </label>
+            <label>
+                <p>Địa chỉ:
+                <input name="diachi" style="margin-left: 2.5rem;" type="text" placeholder="Nhập Mật Khẩu">
+            </label>
+            <label>
+                <p>Điện Thoại:
+                <input name="dienthoai" style="margin-left: 2.5rem;" type="text" placeholder="Nhập Mật Khẩu">
+            </label>
+            <label>
+                <p>Khách Việt Nam:
+                <input name="userName" style="margin-left: 2.5rem;" type="checkbox">
+            </label>
+            <label for="cars">Chọn Tour:
+                <select id="cars">
+                <optgroup label="Miền Bắc">
+                    <option value="Sapa">Hà Nội - Hạ Long - Sapa</option>
+                    <option value="Nình Bình">Hà Nội - Hạ Long - Nình Bình</option>
+                    <option value="Tuần Châu">Hà Nội - Hạ Long - Tuần Châu</option>
+                </optgroup>
+                <optgroup label="Miền Trung">
+                    <option value="Hue">Huế - Bạch Mã - Đà Nẵng</option>
+                    <option value="NhaTrang">Nha Trang - Đà Lạt</option>
+                    <option value="BuonMeThuoc">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                </optgroup>
+                <optgroup label="Miền Nam">
+                    <option value="TPHCM">TP.HCM - Cần Thơ - Cà Mau</option>
+                    <option value="TPHCM">TP.HCM - Mỹ Tho</option>
+                </optgroup>
+                </select>
+            </label>
+            <label>
+                <p>Phương Tiện:
+                    <input type="radio" id="maybay" name="move" value="male">Máy Bay
+                    <input type="radio" id="oto" name="move" value="male">Ô Tô
+            </label>
+            <div class="groupCount">
+                <p class="txtCount">Số Lượng Đoàn Khách</p>
+                <label for="">Người Lớn: <input name="nguoilon" style="width: 80px;" type="text">
+                    Trẻ Em: <input name="nguoilon" style="width: 80px;" type="text">
+            </div>
+            <Label >Ghi Chú:
+            <textarea style="margin-top: 1rem;" name="" id="" cols="40" rows="5"></textarea>
+            </Label>
+            <br>
+            <div style="text-align: center;"><input style="margin-top: 1rem;" type="button" value="Đồng Ý" onclick="OnClick()"></div>
+            
+            
+        </div>
+    </form>
+</body>
+</html>

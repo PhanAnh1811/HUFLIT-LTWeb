@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        label{
+            display: block;
+            text-align: center;
+        }
+
+        body{
+            width: 600px;
+            margin: auto;
+        }
+
+        form{
+            width: 350px;
+            height: 250px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        
+        .form-group{
+            background-color: blue;
+            padding-top: 1rem;
+            padding-bottom: .6rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 style="text-align: center; color: red;">Đăng Nhập</h1>
+        <div class="form-group">
+            <label for="userName">
+                Mã Người Dùng: 
+                <input id="iduserName" name="userName" type="text" placeholder="Nhập Tên Người Dùng">
+            </label>
+            <label for="userName">
+                <p>Mật Khẩu:
+                <input name="userName" style="margin-left: 2.5rem;" type="text" placeholder="Nhập Mật Khẩu">
+            </label>
+            <br>
+            <input style="margin-top: 1rem;" type="button" value="Đồng Ý" onclick="OnClick()">
+            <span id="inUserName" style="font-size: 1.3rem; margin-top: 1rem;"></span>
+        </div>
+    </form>
+    <script src="./scripts.js"></script>
+</body>
+</html>
