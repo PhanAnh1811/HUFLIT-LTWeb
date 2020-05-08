@@ -1,0 +1,21 @@
+body {
+    width: 1080px;
+    padding: 0;
+    margin: auto;
+}
+
+.Container{
+    width: 1080px;
+}
+
+.wrapper{
+    width: 400px;
+    padding-left: 1rem;
+    padding: .5rem 0rem;
+    margin-left: 2rem;
+    box-shadow: 5px 5px 5px rgb(170, 170, 170), -5px -5px 5px rgb(170, 170, 170);
+}
+
+form {
+    margin-left: 2rem;
+}

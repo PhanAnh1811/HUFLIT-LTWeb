@@ -1,0 +1,19 @@
+table,tr,td{
+    border:1px solid black;
+}
+div{
+    margin-bottom: 1200px;
+}
+th {
+	font-size: 90px;
+	color: blue;
+	position: relative;
+	z-index: 1;
+}
+.right-picture-header {
+	position: absolute;
+	right: 15px;
+	z-index:0;
+	width: 100px;
+	top:7px;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    width: 1080px;
+    padding: 0;
+    margin: auto;
+}
+
+.Container{
+    width: 1080px;
+}
+
+.wrapper{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    width: 400px;
+    padding-left: 1rem;
+    box-shadow: 5px 5px 5px rgb(170, 170, 170), -5px -5px 5px rgb(170, 170, 170);
+}
