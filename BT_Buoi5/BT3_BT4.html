@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Danh sách sinh viên 
+		</title>
+	</head>
+	<body>
+		<div>
+			<b> Họ và Tên:</b>
+			<input type="text" id="name"></br>
+			<b> Ngày sinh</b> 
+			<input type="text" id="ngaySinh"></br>
+			<b> Lớp</b>
+			<input type="text" id="class"></br>
+			<button id="themSinhVien">Thêm sinh viên </button>
+		</div>
+		<div id="Nhapthongtin"></div>
+		<button id="xoaSinhVien">Xóa Sinh Viên</button>
+   <script type="text/javascript">
+	
+	var array = [];
+	
+
+	DomID('themSinhVien').addEventListener("click", () => {
+		
+		let sinhVien = {
+			fullName: DomID('name').value,
+			date: DomID('ngaySinh').value,
+			class: DomID('class').value
+		};
+		array.push(sinhVien);
+		console.log(array);
+		resetHTMLInfo(array);
+	
+	});
+
+	DomID('xoaSinhVien').addEventListener("click", () => {
+		array.pop();
+		resetHTMLInfo(array);
+	});
+
+	function resetHTMLInfo(arr) {
+		var sinhVienStr = "";
+
+		for(let i = 0; i < array.length; i++) {
+			sinhVienStr += "<b>Họ Tên: </b>" + array[i].fullName + "</br>" +
+			"<b>Ngày Sinh: </b>" + array[i].date + "</br>" +
+			"<b>Lớp: </b>" + array[i].class + "</br>";
+		}
+
+		DomID('Nhapthongtin').innerHTML = sinhVienStr;
+	}
+
+	function DomID(id){
+		return document.getElementById(id);
+	}
+</script>
+	</body>
+</html>

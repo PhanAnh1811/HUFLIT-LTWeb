@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		bài 2
+	</title>
+</head>
+<body>
+	<div id="nd"> Nội dung </div>
+	<button id="nd1">Xem nội dung 1</button>
+	<button id="nd2">Xem nội dung 2</button> 
+	<script>
+		// function Tinh()
+		// {
+		// 	document.getElementById("nd").innerHTML="Demo thay đổi nội dung";
+		// }
+		// function Nhan()
+		// {
+		// 	document.getElementById("nd").innerHTML="Nội dung của thẻ div đã bị thay đổi";
+		// }
+		document.getElementById('nd1').addEventListener('click', () => {
+			document.getElementById("nd").innerHTML="Demo thay đổi nội dung";
+		});
+		document.getElementById('nd2').addEventListener('click', () => {
+			document.getElementById("nd").innerHTML="Nội dung của thẻ div đã bị thay đổi";
+		});
+	</script>
+</body>
+</html>

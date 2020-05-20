@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tìm Số Lớn Nhất và Bé Nhất </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<script language="javascript">
+var n=[];
+
+do {
+var i=prompt("Mời bạn nhập số: ",)
+n.push(i);
+}
+while(i!=null);
+
+n.pop();
+document.write(n);
+document.write("<br/>");
+
+var min=Math.min.apply(Math,n);
+var max=Math.max.apply(Math,n);
+
+document.write("Số nhỏ nhất là: ");
+document.write(min);
+document.write("<br/>");
+document.write("Số lớn nhất là: ")
+document.write(max);
+ </script>
+</body>
+</html>
