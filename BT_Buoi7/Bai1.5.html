@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài tập thêm 1.5</title>
+		<script>
+			function Cong(form){
+				a=eval(form.a.value)
+				b=eval(form.b.value)
+				c=a+b
+				form.kq.value=c
+			}
+			
+			function Tru(form){
+				a=eval(form.a.value)
+				b=eval(form.b.value)
+				c=a-b
+				form.kq.value=c
+			}
+			
+			function Nhan(form){
+				a=eval(form.a.value)
+				b=eval(form.b.value)
+				c=a*b
+				form.kq.value=c
+			}
+			
+			function Chia(form){
+				a=eval(form.a.value)
+				b=eval(form.b.value)
+				c=a/b
+				form.kq.value=c
+			}
+		</script>		
+	</head>
+	<body>
+		<h1 style="text-align:center">TÍNH TOÁN</h1>
+		<form name="formx">
+			<p>
+			<input type="text" size="3" value="" name="a">
+			<input type="button" value="+" onclick="Cong(this.form)">
+			<input type="button" value="-" onclick="Tru(this.form)">
+			<input type="button" value="*" onclick="Nhan(this.form)">
+			<input type="button" value="/" onclick="Chia(this.form)">
+			<input type="text" size="3" value="" name="b">
+			=
+			<input type="text" value="" name="kq" size="5">
+			</p>
+		</form>
+	</body>
+</html>
